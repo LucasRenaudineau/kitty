@@ -11,7 +11,12 @@ DARK_THEME="$HOME/.config/kitty/themes/dark_theme.conf"
 KITTY_SOCKET="unix:/tmp/kitty"
 
 if [ "$HOUR" -ge 6 ] && [ "$HOUR" -lt 20 ]; then
-    kitty @ --to "$KITTY_SOCKET" set-colors -a "$LIGHT_THEME"
+    # kitty @ --to "$KITTY_SOCKET" set-colors -a "$LIGHT_THEME"
+	kitten themes --reload-in=all Light Theme
 else
-    kitty @ --to "$KITTY_SOCKET" set-colors -a "$DARK_THEME"
+    # kitty @ --to "$KITTY_SOCKET" set-colors -a "$DARK_THEME"
+	kitten themes --reload-in=all Copland OS
+	# Copland OS
+	# Duotone Dark
+	# Neowave
 fi

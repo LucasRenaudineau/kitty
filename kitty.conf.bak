@@ -1,5 +1,5 @@
-# Launch bash
-shell /usr/bin/bash
+# Launch fish
+shell /usr/bin/fish
 
 # Enable remote control
 allow_remote_control yes
@@ -10,6 +10,6 @@ startup_session ~/.config/kitty/startup_session.conf
 
 
 # BEGIN_KITTY_THEME
-# Copland OS
+# Light Theme
 include current-theme.conf
 # END_KITTY_THEME
